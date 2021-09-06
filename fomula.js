@@ -1,6 +1,6 @@
 
 
-function fib (count){
+function fib (count, current_value){
   var N = 0;
   while (N <= count) {
     N += 1;
@@ -11,7 +11,7 @@ function fib (count){
       a = b;
       b = sum;
     }
-    if(b.toString().length == 1000){
+    if(b.toString().length == current_value){
       console.log('F', N, '<==========NUMBER IS============>', b)
       alert('Answer: '+'F'+ N)
       break;
@@ -19,4 +19,4 @@ function fib (count){
   }
 }
 
-fib(5000);
+fib(5000, 1000);
