@@ -1,5 +1,3 @@
-
-
 function fib (count, current_value){
   var N = 0;
   while (N <= count) {
@@ -13,7 +11,7 @@ function fib (count, current_value){
     }
     if(b.toString().length == current_value){
       console.log('F', N, '<==========NUMBER IS============>', b)
-      alert('Answer: '+'F'+ N)
+      alert("What index yields the 1st term to contain a 1,000 digit sum?" + " " + 'Answer: '+'F'+ N)
       break;
     }
   }
