@@ -5,9 +5,8 @@ function fib (count, current_value){
     var a = 1n,
       b = 1n
     for (i = 3; i <= N; i++) {
-      let sum = a + b;
-      a = b;
-      b = sum;
+      [sum, a] = [a + b, b];
+      [b] = [sum]
     }
     if(b.toString().length == current_value){
       console.log('F', N, '<==========NUMBER IS============>', b)
